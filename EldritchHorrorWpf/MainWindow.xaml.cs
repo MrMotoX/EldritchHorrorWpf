@@ -22,7 +22,14 @@ namespace EldritchHorrorWpf
     {
         public MainWindow()
         {
+            SetupGame();
+
             InitializeComponent();
+        }
+
+        private void SetupGame()
+        {
+            CardHandler.CreateDecks();
         }
     }
 }

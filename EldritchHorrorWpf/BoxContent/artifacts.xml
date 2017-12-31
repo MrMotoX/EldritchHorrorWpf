@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Cards>
+  <Card>
+    <Name>Elixir of Life</Name>
+    <Traits>
+      <Trait>Item</Trait>
+      <Trait>Elixir</Trait>
+    </Traits>
+  </Card>
+  <Card>
+    <Name>Khopesh of the Abyss</Name>
+    <Traits>
+      <Trait>Item</Trait>
+      <Trait>Magical</Trait>
+      <Trait>Relic</Trait>
+      <Trait>Weapon</Trait>
+    </Traits>
+  </Card>
+  <Card>
+    <Name>Sword of Y'ha-Talla</Name>
+    <Traits>
+      <Trait>Item</Trait>
+      <Trait>Magical</Trait>
+      <Trait>Weapon</Trait>
+    </Traits>
+  </Card>
+  <Card>
+    <Name>Cultes des Goules</Name>
+    <Traits>
+      <Trait>Item</Trait>
+      <Trait>Tome</Trait>
+    </Traits>
+  </Card>
+  <Card>
+    <Name>The Silver Key</Name>
+    <Traits>
+      <Trait>Item</Trait>
+      <Trait>Magical</Trait>
+    </Traits>
+  </Card>
+  <Card>
+    <Name>Glass of Mortlan</Name>
+    <Traits>
+      <Trait>Item</Trait>
+      <Trait>Magical</Trait>
+    </Traits>
+  </Card>
+</Cards>
