@@ -2,7 +2,7 @@
 
 namespace EldritchHorrorWpf
 {
-    class Artifact : Card
+    public class Artifact : Card
     {
         public Artifact(string name, List<string> traits) : base(name, traits)
         {

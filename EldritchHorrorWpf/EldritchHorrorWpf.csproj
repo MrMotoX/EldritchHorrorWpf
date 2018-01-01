@@ -54,7 +54,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="EldritchHorrorHome.xaml.cs">
+      <DependentUpon>EldritchHorrorHome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GameSetup.xaml.cs">
+      <DependentUpon>GameSetup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReserveData.cs" />
     <Compile Include="Utility.cs" />
+    <Page Include="EldritchHorrorHome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GameSetup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -103,11 +118,13 @@
     <Content Include="BoxContent\artifacts.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Images\Eldritch Horror Logo.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="BoxContent\assets.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -2,7 +2,7 @@
 
 namespace EldritchHorrorWpf
 {
-    class Card
+    public class Card
     {
         private string Name;
         private List<string> Traits;

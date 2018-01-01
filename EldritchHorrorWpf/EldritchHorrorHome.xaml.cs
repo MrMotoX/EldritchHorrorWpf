@@ -16,20 +16,21 @@ using System.Windows.Shapes;
 namespace EldritchHorrorWpf
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for EldritchHorrorHome.xaml
     /// </summary>
-    public partial class MainWindow : NavigationWindow
+    public partial class EldritchHorrorHome : Page
     {
-        public MainWindow()
-        {
-            SetupGame();
+        public static List<Asset> Reserve;
 
+        public EldritchHorrorHome()
+        {
             InitializeComponent();
         }
 
-        private void SetupGame()
+        private void RestartGameButton_Click(object sender, RoutedEventArgs e)
         {
-            CardHandler.CreateDecks();
+            GameSetup gameSetupPage = new GameSetup();
+            this.NavigationService.Navigate(gameSetupPage);
         }
     }
 }

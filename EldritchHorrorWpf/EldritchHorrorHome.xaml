@@ -1,0 +1,47 @@
+﻿<Page x:Class="EldritchHorrorWpf.EldritchHorrorHome"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:c="clr-namespace:EldritchHorrorWpf" 
+      xmlns:local="clr-namespace:EldritchHorrorWpf"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="500"
+      Title="Eldritch Horror - Home">
+
+    <Grid Margin="10,0,10,10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="230" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/Eldritch Horror Logo.png"/>
+        </Grid.Background>
+        <Grid.Resources>
+            <c:ReserveData x:Key="reserveDataSource"/>
+            <DataTemplate x:Key="nameItemTemplate">
+                <Label Content="{Binding Path=Name}"/>
+            </DataTemplate>
+        </Grid.Resources>
+        <Grid.DataContext>
+            <Binding Source="{StaticResource reserveDataSource}"/>
+        </Grid.DataContext>
+
+        <Border Grid.Column="1" Grid.Row="1" Style="{StaticResource listHeaderStyle}">
+            <Label Style="{StaticResource listHeaderTextStyle}">Names</Label>
+        </Border>
+        
+        <ListBox Name="reserveListBox" Grid.Column="1" Grid.Row="2" 
+            ItemsSource="{Binding Source={StaticResource reserveDataSource}}"
+            ItemTemplate="{StaticResource nameItemTemplate}">
+        </ListBox>
+
+        <Button Grid.Column="1" Grid.Row="3" Click="RestartGameButton_Click" Style="{StaticResource buttonStyle}">Restart game</Button>
+    </Grid>
+</Page>
