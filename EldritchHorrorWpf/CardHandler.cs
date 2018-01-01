@@ -150,5 +150,10 @@ namespace EldritchHorrorWpf
 
             return null;
         }
+
+        public static List<Asset> GetReserve()
+        {
+            return Reserve;
+        }
     }
 }

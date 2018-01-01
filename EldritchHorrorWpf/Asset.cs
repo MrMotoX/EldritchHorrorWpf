@@ -2,7 +2,7 @@
 
 namespace EldritchHorrorWpf
 {
-    class Asset : Card
+    public class Asset : Card
     {
         private int Cost;
 
